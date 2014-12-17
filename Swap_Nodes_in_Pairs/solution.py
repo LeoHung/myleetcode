@@ -27,6 +27,8 @@ class Solution:
             first.next, second.next = second.next, first
             last.next = second
 
+            if last.next == None or last.next.next == None:
+                break
+            last = last.next.next
+
         return tmp_head.next
-
-

@@ -28,10 +28,8 @@ class Solution:
                     isInserted = True                    
 
                 if not isMerging and self.check_intersected(inter, newInterval):
-                    # print i, inter.start, inter.end
                     isMerging = True
                     merged_inter = Interval(min(inter.start, newInterval.start), max(inter.end, newInterval.end))
-                    # print merged_inter.start, merged_inter.end
 
 
                 if isMerging:
